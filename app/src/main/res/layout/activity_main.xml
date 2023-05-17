@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@color/white"
     tools:context=".MainActivity">
 
@@ -19,42 +19,44 @@
         android:textColor="@color/white"
         android:textSize="50dp" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="91dp"
-        android:layout_height="43dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="142dp"
-        android:layout_marginEnd="178dp"
-        android:layout_marginBottom="33dp"
-        app:srcCompat="@drawable/ic_baseline_notification_add_24"
-        tools:layout_editor_absoluteX="191dp"
-        tools:layout_editor_absoluteY="328dp" />
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/taskRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_marginTop="12mm"
         android:nestedScrollingEnabled="true"
-        android:layout_marginTop="12mm"/>
-
-
-
-
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/fab"
-        android:layout_alignParentBottom="true"
+        android:layout_width="48dp"
+        android:layout_height="117dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_margin="32dp"
-        android:background="#800080"/>
 
+        android:layout_marginStart="343dp"
+        android:layout_marginTop="684dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:background="#800080" />
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="679dp"
+        android:layout_marginEnd="169dp"
+        android:layout_marginBottom="94dp"
+        app:srcCompat="@drawable/ic_baseline_notification_add_24"
+        tools:layout_editor_absoluteX="191dp"
+        tools:layout_editor_absoluteY="328dp" />
 
 
 </RelativeLayout>
