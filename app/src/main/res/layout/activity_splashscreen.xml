@@ -14,10 +14,18 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="261dp"
-        android:layout_marginEnd="141dp"
-        android:layout_marginBottom="336dp"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="278dp"
+        android:layout_marginEnd="130dp"
         android:src="@drawable/ic_baseline_access_time_24" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="27dp"
+        android:text="SCHEDULER"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textColor="#800080" />.
 </RelativeLayout>

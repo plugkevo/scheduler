@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val imageView = findViewById<ImageView>(R.id.fab)
+        val imageView = findViewById<ImageView>(R.id.add_button)
         imageView.setOnClickListener {
             val intent = Intent(this, add_page::class.java)
             startActivity(intent)
@@ -26,9 +26,10 @@ class MainActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
 
         val items = listOf(
-            Item("Item 1", "Description 1"),
-            Item("Item 2", "Description 2"),
-            Item("Item 3", "Description 3")
+            Item("Eat breakfast", "Description 1"),
+            Item("Eat lunch", "Description 2"),
+            Item("Eat supper", "Description 3"),
+            Item("Sleep", "Description 4")
         )
         val adapter = ItemAdapter(items)
         recyclerView.adapter = adapter
