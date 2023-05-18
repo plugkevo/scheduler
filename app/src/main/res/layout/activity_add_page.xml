@@ -9,7 +9,8 @@
         android:layout_width="match_parent"
         android:background="@null"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:hint="New Task"
+
+        android:text="New Task"
         android:textSize="20dp"
         android:textColor="@color/black"/>
 
